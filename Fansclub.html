@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Messi</a>
+        <a href="./Fansclub.html">Fans Club</a>
+    </nav>
+    <h1 id="title">Lionel Messi´s fans club</h1>
+    <h2>Fill the Fan-form</h2>
+    <form action="Fan-form">
+        <p id="FanForm"></p>
+        <section class="box">
+            <label for="name" id="name-label"> Full name: </label> <input type="text" name="" id="name" placeholder="Enter you full name" required><br><br>
+            <label for="email" id="email-label"> Email address: </label> <input type="email"  id="email" placeholder="Enter your email" required><br><br>
+            <label for="age" id="number-label"> Age: </label> <input type="number" name="" id="age" min="10" max="110" placeholder="Age"><br><br>
+        </section>
+        <section class="select" id="select">
+            <label for="location"> From where do you follow?</label>
+            <select name="location" id="location">
+            <option value=""></option>
+            <option value="america">America</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+            </select>
+        </section><br>
+        <section class="vip">
+            <span>Would you like to access to the vip fan club? (Latest news and fun gifts)</span><br>
+            <input type="radio" name="vip" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="vip" id="no" value="no">
+            <label for="no">No</label>
+        </section><br>
+        <section class="checkbox">
+            <span>Best team he has played</span>
+            <br>
+            <input type="checkbox" name="team" id="arg" value="arg">
+            <label for="arg">Argentina</label>
+            <input type="checkbox" name="team" id="bcn" value="bcn">
+            <label for="bcn">Barcelona</label>
+            <input type="checkbox" name="team" id="psg" value="psg">
+            <label for="psg">PSG</label>
+        </section><br>
+        <section class="textarea">
+            <label for="extra">Anything else you want to add?</label>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <section class="submission">
+            <input type="submit" value="Submit">
+        </section>
+    </form>
+</body>
+</html>
